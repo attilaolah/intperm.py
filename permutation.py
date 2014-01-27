@@ -24,7 +24,15 @@ class Permutation(object):
 
     def map(self, num):
         """Map a number to another random one."""
-        raise NotImplementedError()
+        for i in range(64):
+            bit = 1 << i
+            if (bit & num) >> i == 0:
+                num ^= _ONES ^ (self._masks[(i << 1)+((bit & num) >> i)] |
+                                (bit ^ bit & num))
+            else:
+                num ^= _ONES ^ (self._masks[(i << 1)+((bit & num) >> i)] |
+                                (bit & num))
+        return num
 
     def unmap(self, num):
         """The reverse of map. Ino ther words, perm.unmap(perm.map(x)) == x."""
