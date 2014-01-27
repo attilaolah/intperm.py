@@ -24,19 +24,15 @@ class Permutation(object):
 
     def map(self, num):
         """Map a number to another random one."""
-        for i in range(self.bit_length):
-            bit = 1 << i
-            if (bit & num) >> i == 0:
-                num ^= self._mask ^ (self._masks[(i << 1)+((bit & num) >> i)] |
-                                     (bit ^ bit & num))
-            else:
-                num ^= self._mask ^ (self._masks[(i << 1)+((bit & num) >> i)] |
-                                     (bit & num))
-        return num
+        return self._map(num, range(self.bit_length))
 
     def unmap(self, num):
         """The reverse of map. Ino ther words, perm.unmap(perm.map(x)) == x."""
-        for i in range(self.bit_length-1, -1, -1):
+        return self._map(num, range(self.bit_length-1, -1, -1))
+
+    def _map(self, num, rng):
+        """Logic used by both `map` and `unmap`."""
+        for i in rng:
             bit = 1 << i
             if (bit & num) >> i == 0:
                 num ^= self._mask ^ (self._masks[(i << 1)+((bit & num) >> i)] |
