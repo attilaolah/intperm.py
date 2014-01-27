@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-"""Python client for the Diffbot API."""
+"""A simple permutation for arbitrary length integers."""
 from setuptools import setup
 
 
 setup(
-    name='diffbot',
+    name='permutation',
     version='1.0.0',
     url='https://github.com/attilaolah/permutation.py',
     license='Public Domain',
     author='Attila Oláh',
     author_email='attilaolah@gmail.com',
-    description="Python client for the Diffbot API.",
+    description="A simple permutation for arbitrary length integers.",
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
