@@ -2,7 +2,7 @@
 import unittest
 
 
-RUNS = 1000
+RUNS = 256
 
 
 class PermutationTest(unittest.TestCase):
@@ -25,6 +25,33 @@ class PermutationTest(unittest.TestCase):
     def test_unmap(self):
         """Test the unmap method."""
         self.assertEqual(self.perm.unmap(3333656047352411619), 42)
+
+    def test_unmap_reverse(self):
+        """Test the unmap method."""
+        for i in range(RUNS):
+            self.assertEqual(self.perm.unmap(self.perm.map(i)), i)
+
+
+class Permutation8bitTest(unittest.TestCase):
+    """8-bit permutation tests."""
+
+    def setUp(self):
+        """Set up an 8-bit permutation instance."""
+        import permutation
+        self.perm = permutation.Permutation(42, (13, 7, 17), bit_length=8)
+
+    def test_map(self):
+        """Test the map method."""
+        self.assertEqual(self.perm.map(42), 255)
+
+    def test_map_not_self(self):
+        """Test the map method."""
+        for i in range(RUNS):
+            self.assertNotEqual(self.perm.map(i), i)
+
+    def test_unmap(self):
+        """Test the unmap method."""
+        self.assertEqual(self.perm.unmap(255), 42)
 
     def test_unmap_reverse(self):
         """Test the unmap method."""
