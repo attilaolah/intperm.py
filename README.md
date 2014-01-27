@@ -18,12 +18,11 @@ seed is kept secret.
 
 ## Usage
 
-Create a new permutation instance, `Permutation()`, by passing in two
-parameters.
+Create a new `Permutation` instance by passing in two parameters:
 
-The first parameter is the seed, which can be any random value.
-The next paramer is a triplet of integers used by the XORShift to expand the
-seed. Valid values are listed in [George Marsaglia's paper][2], on *page 3*.
+* The first parameter is the seed, which can be any random value.
+* The next paramer is a triplet of integers used by the XORShift to expand the
+  seed. Valid values are listed in [George Marsaglia's paper][2], on *page 3*.
 
 ```python
 >>> perm = permutation.Permutation(42, (13, 7, 17))
