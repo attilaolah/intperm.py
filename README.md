@@ -1,7 +1,8 @@
 # Permutation
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/attilaolah/permutation.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/permutation.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/attilaolah/permutation.py.png?branch=master)](https://travis-ci.org/attilaolah/permutation.py)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/permutation.py/badge.png)](https://coveralls.io/r/attilaolah/permutation.py)
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
