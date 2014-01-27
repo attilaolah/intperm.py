@@ -10,7 +10,7 @@ _ONES = 0xffffffffffffffff
 class Permutation(object):
     """Simple permutation object."""
 
-    def __init__(self, seed, (p_a, p_b, p_c)):
+    def __init__(self, seed, params):
         """Set up the permutation object.
 
         The first argument, `seed`, can be any random number.
@@ -18,7 +18,7 @@ class Permutation(object):
         paper (page 3). For unpredictable permutations, choose different values
         from http://www.jstatsoft.org/v08/i14/paper.
         """
-        xorshift = _XORShift(seed, p_a, p_b, p_c)
+        xorshift = _XORShift(seed, params)
         self._masks = tuple(xorshift() & ((1 << (i >> 1)) ^ _ONES)
                             for i in range(128))
 
@@ -50,11 +50,9 @@ class Permutation(object):
 class _XORShift(object):
     """XOR Shift implementation."""
 
-    def __init__(self, seed, p_a, p_b, p_c):
+    def __init__(self, seed, params):
         self._seed = seed
-        self._p_a = p_a
-        self._p_b = p_b
-        self._p_c = p_c
+        self._p_a, self._p_b, self._p_c = params
 
     def __call__(self):
         self._seed ^= _ONES & (self._seed << self._p_a)
