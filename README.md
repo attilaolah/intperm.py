@@ -3,6 +3,7 @@
 [![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/permutation.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/attilaolah/permutation.py.png?branch=master)](https://travis-ci.org/attilaolah/permutation.py)
 [![Coverage Status](https://coveralls.io/repos/attilaolah/permutation.py/badge.png)](https://coveralls.io/r/attilaolah/permutation.py)
+[![Dependency Status](https://gemnasium.com/attilaolah/permutation.py.png)](https://gemnasium.com/attilaolah/permutation.py)
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
@@ -45,9 +46,10 @@ this can save you from having to index those tokens in the database.
 
 ## See also
 
-There is currently also a [Go implementation][6] of this library.
+This library is also implemented in [Ruby][7] and [Go][6].
 
 [6]: //github.com/attilaolah/permutation.go
+[7]: //github.com/attilaolah/permutation.rb
 
 ## License
 
