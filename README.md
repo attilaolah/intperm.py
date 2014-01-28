@@ -26,9 +26,9 @@ Create a new `Permutation` instance by passing in two parameters:
 
 ```python
 >>> perm = permutation.Permutation(42, (13, 7, 17))
->>> p.map(42)
+>>> perm.map(42)
 3333656047352411619
->>> p.unmap(3333656047352411619)
+>>> perm.unmap(3333656047352411619)
 42
 ```
 
