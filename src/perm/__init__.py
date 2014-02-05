@@ -22,16 +22,16 @@ class Permutation(object):
         self._masks = tuple(xorshift() & ((1 << (i >> 1)) ^ self._mask)
                             for i in range(bit_length*2))
 
-    def map(self, num):
+    def map_to(self, num):
         """Map a number to another random one."""
         return self._map(num, range(self.bit_length))
 
-    def unmap(self, num):
-        """The reverse of map. Ino ther words, perm.unmap(perm.map(x)) == x."""
+    def map_from(self, num):
+        """The reverse of `map_to`. IOW `perm.map_from(perm.map(x)) == x`."""
         return self._map(num, range(self.bit_length-1, -1, -1))
 
     def _map(self, num, rng):
-        """Logic used by both `map` and `unmap`."""
+        """Logic used by both `map_to` and `map_from`."""
         for i in rng:
             bit = 1 << i
             if (bit & num) >> i == 0:

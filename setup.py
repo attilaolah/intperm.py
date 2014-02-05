@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 """A simple permutation for arbitrary length integers."""
-from setuptools import setup
+from setuptools import find_packages, setup
 
 
 setup(
-    name='permutation',
+    name='perm',
     version='1.0.0',
-    url='https://github.com/attilaolah/permutation.py',
+    url='https://github.com/attilaolah/perm.py',
     license='Public Domain',
     author='Attila Oláh',
     author_email='attilaolah@gmail.com',
@@ -27,7 +27,8 @@ setup(
     tests_require=[
         "nose",
     ],
-    py_modules=['permutation'],
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     include_package_data=False,
     test_suite='nose.collector',
     zip_safe=True,
