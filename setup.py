@@ -4,9 +4,9 @@ from setuptools import find_packages, setup
 
 
 setup(
-    name='perm',
+    name='intperm',
     version='1.1.0',
-    url='https://github.com/attilaolah/perm.py',
+    url='https://github.com/attilaolah/intperm.py',
     license='Public Domain',
     author='Attila Oláh',
     author_email='attilaolah@gmail.com',

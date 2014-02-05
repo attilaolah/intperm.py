@@ -1,9 +1,9 @@
 # Permutation
 
-[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/perm.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/attilaolah/perm.py.png?branch=master)](https://travis-ci.org/attilaolah/perm.py)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/perm.py/badge.png)](https://coveralls.io/r/attilaolah/perm.py)
-[![Dependency Status](https://gemnasium.com/attilaolah/perm.py.png)](https://gemnasium.com/attilaolah/perm.py)
+[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](https://travis-ci.org/attilaolah/intperm.py.png?branch=master)](https://travis-ci.org/attilaolah/intperm.py)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.py/badge.png)](https://coveralls.io/r/attilaolah/intperm.py)
+[![Dependency Status](https://gemnasium.com/attilaolah/intperm.py.png)](https://gemnasium.com/attilaolah/intperm.py)
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
@@ -22,17 +22,18 @@ seed is kept secret.
 Create a new `Permutation` instance by passing in an optional seed.
 
 ```python
->>> perm = perm.Permutation(42)
+>>> fromo intperm import Permutation
+>>> perm = Permutation(42)
 >>> perm.map_to(37)
 13750393542137160527L
 >>> perm.map_from(13750393542137160527)
 37
 ```
 
-Not passing in will create a random permutation:
+Not providing a seed will create a random permutation:
 
 ```python
->>> perm = perm.Permutation()
+>>> perm = Permutation()
 >>> perm.map_from(perm.map_to(37)) == 37
 True
 ```
@@ -52,11 +53,11 @@ this can save you from having to index those tokens in the database.
 
 This library is also implemented in [Ruby][7] and [Go][6].
 
-[6]: //github.com/attilaolah/perm.go
-[7]: //github.com/attilaolah/perm.rb
+[6]: //github.com/attilaolah/intperm.go
+[7]: //github.com/attilaolah/intperm.rb
 
 ## License
 
 [Public domain][3].
 
-[3]: //github.com/attilaolah/perm.py/blob/master/LICENSE
+[3]: //github.com/attilaolah/intperm.py/blob/master/LICENSE

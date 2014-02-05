@@ -10,8 +10,8 @@ class PermutationTest(unittest.TestCase):
 
     def setUp(self):
         """Set up a permutation instance."""
-        import perm
-        self.perm = perm.Permutation(seed=42)
+        import intperm
+        self.perm = intperm.Permutation(seed=42)
 
     def test_map_to(self):
         """Test the map_to method."""
@@ -33,8 +33,8 @@ class PermutationTest(unittest.TestCase):
 
     def test_map_from_reverse_random(self):
         """Test the map_from method with a random permutation."""
-        import perm
-        perm = perm.Permutation()
+        import intperm
+        perm = intperm.Permutation()
         for i in range(RUNS):
             self.assertEqual(perm.map_from(perm.map_to(i)), i)
 
@@ -44,8 +44,8 @@ class Permutation8bitTest(unittest.TestCase):
 
     def setUp(self):
         """Set up an 8-bit permutation instance."""
-        import perm
-        self.perm = perm.Permutation(8, seed=42)
+        import intperm
+        self.perm = intperm.Permutation(8, seed=42)
 
     def test_map_to(self):
         """Test the map_to method."""
