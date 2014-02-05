@@ -10,8 +10,8 @@ class PermutationTest(unittest.TestCase):
 
     def setUp(self):
         """Set up a permutation instance."""
-        import permutation
-        self.perm = permutation.Permutation(42, (13, 7, 17))
+        import perm
+        self.perm = perm.Permutation(42, (13, 7, 17))
 
     def test_map_to(self):
         """Test the map_to method."""
@@ -37,8 +37,8 @@ class Permutation8bitTest(unittest.TestCase):
 
     def setUp(self):
         """Set up an 8-bit permutation instance."""
-        import permutation
-        self.perm = permutation.Permutation(42, (13, 7, 17), bit_length=8)
+        import perm
+        self.perm = perm.Permutation(42, (13, 7, 17), bit_length=8)
 
     def test_map_to(self):
         """Test the map_to method."""
