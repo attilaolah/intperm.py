@@ -4,11 +4,13 @@ This file also includes a simple XORShift-based PRNG for expanding the seed.
 Example code from http://www.jstatsoft.org/v08/i14/paper (public domain).
 """
 
+from .data import TRIPLETS
+
 
 class Permutation(object):
     """Simple permutation object."""
 
-    def __init__(self, seed, params, bit_length=64):
+    def __init__(self, seed, bit_length=64):
         """Set up the permutation object.
 
         The first argument, `seed`, can be any random number.
@@ -18,7 +20,7 @@ class Permutation(object):
         """
         self.bit_length = bit_length
         self._mask = (1 << bit_length)-1
-        xorshift = _XORShift(seed, params, self._mask)
+        xorshift = _XORShift(seed, self._mask)
         self._masks = tuple(xorshift() & ((1 << (i >> 1)) ^ self._mask)
                             for i in range(bit_length*2))
 
@@ -36,19 +38,20 @@ class Permutation(object):
             bit = 1 << i
             if (bit & num) >> i == 0:
                 num ^= self._mask ^ (self._masks[(i << 1)+((bit & num) >> i)] |
-                                     (bit ^ bit & num))
+                                    (bit ^ bit & num))
             else:
                 num ^= self._mask ^ (self._masks[(i << 1)+((bit & num) >> i)] |
-                                     (bit & num))
+                                    (bit & num))
         return num
 
 
 class _XORShift(object):
     """XOR Shift implementation."""
 
-    def __init__(self, seed, params, bitmask):
+    def __init__(self, seed, bitmask):
         self._seed = seed
-        self._p_a, self._p_b, self._p_c = params
+        triplet = TRIPLETS[seed % len(TRIPLETS)]
+        self._p_a, self._p_b, self._p_c = triplet
         self._bitmask = bitmask
 
     def __call__(self):
