@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='perm',
-    version='1.0.0',
+    version='1.1.0',
     url='https://github.com/attilaolah/perm.py',
     license='Public Domain',
     author='Attila Oláh',
