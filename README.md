@@ -1,9 +1,9 @@
 # Permutation
 
-[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/permutation.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/attilaolah/permutation.py.png?branch=master)](https://travis-ci.org/attilaolah/permutation.py)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/permutation.py/badge.png)](https://coveralls.io/r/attilaolah/permutation.py)
-[![Dependency Status](https://gemnasium.com/attilaolah/permutation.py.png)](https://gemnasium.com/attilaolah/permutation.py)
+[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/perm.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Build Status](https://travis-ci.org/attilaolah/perm.py.png?branch=master)](https://travis-ci.org/attilaolah/perm.py)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/perm.py/badge.png)](https://coveralls.io/r/attilaolah/perm.py)
+[![Dependency Status](https://gemnasium.com/attilaolah/perm.py.png)](https://gemnasium.com/attilaolah/perm.py)
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
@@ -19,18 +19,22 @@ seed is kept secret.
 
 ## Usage
 
-Create a new `Permutation` instance by passing in two parameters:
-
-* The first parameter is the seed, which can be any random value.
-* The next paramer is a triplet of integers used by the XORShift to expand the
-  seed. Valid values are listed in [George Marsaglia's paper][2], on *page 3*.
+Create a new `Permutation` instance by passing in an optional seed.
 
 ```python
->>> perm = permutation.Permutation(42, (13, 7, 17))
->>> perm.map(42)
-3333656047352411619
->>> perm.unmap(3333656047352411619)
-42
+>>> perm = perm.Permutation(42)
+>>> perm.map_to(37)
+13750393542137160527L
+>>> perm.map_from(13750393542137160527)
+37
+```
+
+Not passing in will create a random permutation:
+
+```python
+>>> perm = perm.Permutation()
+>>> perm.map_from(perm.map_to(37)) == 37
+True
 ```
 
 ## Use cases
@@ -48,11 +52,11 @@ this can save you from having to index those tokens in the database.
 
 This library is also implemented in [Ruby][7] and [Go][6].
 
-[6]: //github.com/attilaolah/permutation.go
-[7]: //github.com/attilaolah/permutation.rb
+[6]: //github.com/attilaolah/perm.go
+[7]: //github.com/attilaolah/perm.rb
 
 ## License
 
 [Public domain][3].
 
-[3]: //github.com/attilaolah/permutation.go/blob/master/LICENSE
+[3]: //github.com/attilaolah/perm.py/blob/master/LICENSE
