@@ -12,13 +12,7 @@ class Permutation(object):
     """Simple permutation object."""
 
     def __init__(self, bit_length=64, seed=None):
-        """Set up the permutation object.
-
-        The first argument, `seed`, can be any random number.
-        The other three should be one of the 275 available triplets from the
-        paper (page 3). For unpredictable permutations, choose different values
-        from http://www.jstatsoft.org/v08/i14/paper.
-        """
+        """Set up the permutation object. `seed` can be any rundom number."""
         if seed is None:
             seed = random.randint(0, (1 << bit_length)-1)
         self.bit_length = bit_length
