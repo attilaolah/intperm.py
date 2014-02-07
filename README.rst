@@ -2,20 +2,18 @@ Permutation
 ===========
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
-   :target: https://bitdeli.com/free
    :alt: Bitdeli
-.. image:: https://pypip.in/license/intperm/badge.png?period=month
-   :target: https://pypi.python.org/pypi/intperm/
-   :alt: Downloads
+.. image:: https://pypip.in/license/intperm/badge.png
+   :alt: License
 .. image:: https://travis-ci.org/attilaolah/intperm.py.png?branch=master
    :target: https://travis-ci.org/attilaolah/intperm.py
    :alt: Build Status
 .. image:: https://coveralls.io/repos/attilaolah/intperm.py/badge.png?branch=master
    :target: https://coveralls.io/r/attilaolah/intperm.py
    :alt: Coverage Status
-.. image:: https://pypip.in/v/intperm/badge.png?period=month
+.. image:: https://pypip.in/v/intperm/badge.png
    :target: https://pypi.python.org/pypi/intperm/
-   :alt: Downloads
+   :alt: Version
 .. image:: https://pypip.in/d/intperm/badge.png?period=month
    :target: https://pypi.python.org/pypi/intperm/
    :alt: Downloads
