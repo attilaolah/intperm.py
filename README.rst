@@ -10,9 +10,15 @@ Permutation
 .. image:: https://coveralls.io/repos/attilaolah/intperm.py/badge.png?branch=master
    :target: https://coveralls.io/r/attilaolah/intperm.py
    :alt: Coverage Status
-.. image:: https://badge.fury.io/py/intperm.png
-   :target: http://badge.fury.io/py/intperm
-   :alt: PyPI version
+.. image:: https://pypip.in/v/intperm/badge.png?period=month
+   :target: https://pypi.python.org/pypi/intperm/
+   :alt: Downloads
+.. image:: https://pypip.in/d/intperm/badge.png?period=month
+   :target: https://pypi.python.org/pypi/intperm/
+   :alt: Downloads
+.. image:: https://pypip.in/license/intperm/badge.png?period=month
+   :target: https://pypi.python.org/pypi/intperm/
+   :alt: Downloads
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
