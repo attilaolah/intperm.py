@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
-"""A simple permutation for arbitrary length integers."""
+"""A simple permutation for arbitrary size integers."""
 from setuptools import find_packages, setup
 
+
+with open('README.rst') as README:
+    LONG_DESCRIPTION = README.read()
 
 setup(
     name='intperm',
@@ -10,7 +13,8 @@ setup(
     license='Public Domain',
     author='Attila Oláh',
     author_email='attilaolah@gmail.com',
-    description="A simple permutation for arbitrary length integers.",
+    description="A simple permutation for arbitrary size integers.",
+    long_description=LONG_DESCRIPTION,
     classifiers=[
         "Development Status :: 4 - Beta",
         "Intended Audience :: Developers",
