@@ -1,9 +1,18 @@
-# Permutation
+Permutation
+===========
 
-[![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-[![Build Status](https://travis-ci.org/attilaolah/intperm.py.png?branch=master)](https://travis-ci.org/attilaolah/intperm.py)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.py/badge.png?branch=master)](https://coveralls.io/r/attilaolah/intperm.py)
-[![PyPI version](https://badge.fury.io/py/intperm.png)](http://badge.fury.io/py/intperm)
+.. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
+   :target: https://bitdeli.com/free
+   :alt: Bitdeli
+.. image:: https://travis-ci.org/attilaolah/intperm.py.png?branch=master
+   :target: https://travis-ci.org/attilaolah/intperm.py
+   :alt: Build Status
+.. image:: https://coveralls.io/repos/attilaolah/intperm.py/badge.png?branch=master
+   :target: https://coveralls.io/r/attilaolah/intperm.py
+   :alt: Coverage Status
+.. image:: https://badge.fury.io/py/intperm.png
+   :target: http://badge.fury.io/py/intperm
+   :alt: PyPI version
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
@@ -17,28 +26,30 @@ seed is kept secret.
 [1]: //en.wikipedia.org/wiki/Pseudorandom_number_generator
 [2]: http://www.jstatsoft.org/v08/i14/paper
 
-## Usage
+Usage
+-----
 
 Create a new `Permutation` instance by passing in an optional seed.
 
-```python
->>> fromo intperm import Permutation
->>> perm = Permutation(42)
->>> perm.map_to(37)
-13750393542137160527L
->>> perm.map_from(13750393542137160527)
-37
-```
+.. code:: python
+
+    >>> fromo intperm import Permutation
+    >>> perm = Permutation(42)
+    >>> perm.map_to(37)
+    13750393542137160527L
+    >>> perm.map_from(13750393542137160527)
+    37
 
 Not providing a seed will create a random permutation:
 
-```python
->>> perm = Permutation()
->>> perm.map_from(perm.map_to(37)) == 37
-True
-```
+.. code:: python
 
-## Use cases
+    >>> perm = Permutation()
+    >>> perm.map_from(perm.map_to(37)) == 37
+    True
+
+Use cases
+---------
 
 Use cases may vary, but an example that I find useful is generating
 [hard][4]-to-guess, random-looking tokens based on IDs stored in a database.
@@ -58,14 +69,16 @@ these kinds of attacks practically useless.
 [4]: //en.wikipedia.org/wiki/NP-hard
 [5]: //en.wikipedia.org/wiki/Cardinality
 
-## See also
+See also
+--------
 
 This library is also implemented in [Ruby][7] and [Go][6].
 
 [6]: //github.com/attilaolah/intperm.go
 [7]: //github.com/attilaolah/intperm.rb
 
-## License
+License
+-------
 
 [Public domain][3].
 
