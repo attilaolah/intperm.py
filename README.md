@@ -2,7 +2,7 @@
 
 [![Bitdeli](https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 [![Build Status](https://travis-ci.org/attilaolah/intperm.py.png?branch=master)](https://travis-ci.org/attilaolah/intperm.py)
-[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.py/badge.png)](https://coveralls.io/r/attilaolah/intperm.py)
+[![Coverage Status](https://coveralls.io/repos/attilaolah/intperm.py/badge.png?branch=master)](https://coveralls.io/r/attilaolah/intperm.py)
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
