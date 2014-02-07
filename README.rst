@@ -26,7 +26,7 @@ described by *George Marsaglia* in his paper called `Xorshift RNGs`_. The
 permutations are thus believed to be unpredictable, provided provided that the
 seed is kept secret.
 
-.. _PRNG: //en.wikipedia.org/wiki/Pseudorandom_number_generator
+.. _PRNG: https://en.wikipedia.org/wiki/Pseudorandom_number_generator
 .. _Xorshift RNGs: http://www.jstatsoft.org/v08/i14/paper
 
 Usage
@@ -69,15 +69,15 @@ keeping track of the status codes (e.g. 403 vs. 404).
 Using this simple permutation, user IDs can be kept unpredictable, rendering
 these kinds of attacks practically useless.
 
-.. _hard: //en.wikipedia.org/wiki/NP-hard
-.. _cardinality: //en.wikipedia.org/wiki/Cardinality
+.. _hard: https://en.wikipedia.org/wiki/NP-hard
+.. _cardinality: https://en.wikipedia.org/wiki/Cardinality
 
 See also
 --------
 
 This library is also implemented in Ruby_ and Go_.
 
-.. _Ruby: //github.com/attilaolah/intperm.rb
-.. _Go: //github.com/attilaolah/intperm.go
+.. _Ruby: https://github.com/attilaolah/intperm.rb
+.. _Go: https://github.com/attilaolah/intperm.go
 
 .. |License| image:: https://pypip.in/license/intperm/badge.png
