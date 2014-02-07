@@ -4,6 +4,9 @@ Permutation
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
    :target: https://bitdeli.com/free
    :alt: Bitdeli
+.. image:: https://pypip.in/license/intperm/badge.png?period=month
+   :target: https://pypi.python.org/pypi/intperm/
+   :alt: Downloads
 .. image:: https://travis-ci.org/attilaolah/intperm.py.png?branch=master
    :target: https://travis-ci.org/attilaolah/intperm.py
    :alt: Build Status
@@ -14,9 +17,6 @@ Permutation
    :target: https://pypi.python.org/pypi/intperm/
    :alt: Downloads
 .. image:: https://pypip.in/d/intperm/badge.png?period=month
-   :target: https://pypi.python.org/pypi/intperm/
-   :alt: Downloads
-.. image:: https://pypip.in/license/intperm/badge.png?period=month
    :target: https://pypi.python.org/pypi/intperm/
    :alt: Downloads
 
