@@ -1,9 +1,6 @@
 Permutation
 ===========
 
-.. role:: python(code)
-   :language: pythonh
-
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
    :target: https://bitdeli.com/free
    :alt: Bitdeli
@@ -32,7 +29,7 @@ seed is kept secret.
 Usage
 -----
 
-Create a new :python:`Permutation` instance by passing in an optional seed.
+Create a new ``Permutation`` instance by passing in an optional seed.
 
 .. code:: python
 
