@@ -62,9 +62,9 @@ this can save you from having to index those tokens in the database.
 
 Another good example is randomising IDs of private objects that are available
 via some sort of an API. Let's say the user accounts on your website are
-accessible via the path :python:`"/user/:id"`, where :python:`":id"` is the
-user's ID. Someone could track the growth of your user base just by enumerating
-the URLs and keeping track of the status codes (e.g. 403 vs. 404).
+accessible via the path ``/user/:id``, where ``:id`` is the user's ID. Someone
+could track the growth of your user base just by enumerating the URLs and
+keeping track of the status codes (e.g. 403 vs. 404).
 
 Using this simple permutation, user IDs can be kept unpredictable, rendering
 these kinds of attacks practically useless.
