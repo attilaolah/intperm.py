@@ -5,7 +5,7 @@ Example code from http://www.jstatsoft.org/v08/i14/paper (public domain).
 """
 import random
 
-from .data import TRIPLETS
+from .parameters import TRIPLETS
 
 
 class Permutation(object):
