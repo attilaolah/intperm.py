@@ -1,5 +1,7 @@
-Integer Permutation ![License](https://pypip.in/license/intperm/badge.png)
-==========================================================================
+Integer Permutation |License|
+=============================
+
+](https://pypip.in/license/intperm/badge.png)
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
    :alt: Bitdeli
@@ -80,3 +82,5 @@ This library is also implemented in Ruby_ and Go_.
 
 .. _Ruby: //github.com/attilaolah/intperm.rb
 .. _Go: //github.com/attilaolah/intperm.go
+
+.. |License| image:: https://pypip.in/license/intperm/badge.png
