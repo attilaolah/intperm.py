@@ -8,7 +8,7 @@ with open('README.rst') as README:
 
 setup(
     name='intperm',
-    version='1.1.0',
+    version='1.1.1',
     url='https://github.com/attilaolah/intperm.py',
     license='Public Domain',
     author='Attila Oláh',
