@@ -1,12 +1,9 @@
 Integer Permutation |License|
 =============================
 
-](https://pypip.in/license/intperm/badge.png)
-
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
+   :target: https://bitdeli.com/free
    :alt: Bitdeli
-.. image:: https://pypip.in/license/intperm/badge.png
-   :alt: License
 .. image:: https://travis-ci.org/attilaolah/intperm.py.png?branch=master
    :target: https://travis-ci.org/attilaolah/intperm.py
    :alt: Build Status
