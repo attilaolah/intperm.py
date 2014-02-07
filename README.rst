@@ -1,5 +1,5 @@
-Permutation
-===========
+Integer Permutation ![License](https://pypip.in/license/intperm/badge.png)
+==========================================================================
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
    :alt: Bitdeli
