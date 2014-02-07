@@ -82,10 +82,3 @@ This library is also implemented in Ruby_ and Go_.
 
 .. _Ruby: //github.com/attilaolah/intperm.rb
 .. _Go: //github.com/attilaolah/intperm.go
-
-License
--------
-
-`Public domain`_.
-
-.. _Public domain: //github.com/attilaolah/intperm.py/blob/master/LICENSE
