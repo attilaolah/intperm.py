@@ -13,7 +13,7 @@ setup(
     license='Public Domain',
     author='Attila Oláh',
     author_email='attilaolah@gmail.com',
-    description='A simple permutation for arbitrary size integers.',
+    description='Pseudo-random permutation of arbitrary size integers.',
     long_description=LONG_DESCRIPTION,
     classifiers=[
         'Development Status :: 4 - Beta',
