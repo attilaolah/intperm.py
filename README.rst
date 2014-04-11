@@ -1,5 +1,5 @@
-Integer Permutation |License|
-=============================
+Integer Permutation
+===================
 
 .. image:: https://d2weczhvl823v0.cloudfront.net/attilaolah/intperm.py/trend.png
    :target: https://bitdeli.com/free
@@ -10,12 +10,6 @@ Integer Permutation |License|
 .. image:: https://coveralls.io/repos/attilaolah/intperm.py/badge.png?branch=master
    :target: https://coveralls.io/r/attilaolah/intperm.py
    :alt: Coverage Status
-.. image:: https://pypip.in/v/intperm/badge.png
-   :target: https://pypi.python.org/pypi/intperm/
-   :alt: Version
-.. image:: https://pypip.in/d/intperm/badge.png?period=month
-   :target: https://pypi.python.org/pypi/intperm/
-   :alt: Downloads
 
 This package implements a simple, configurable permutation on the set of 64-bit
 integers.
@@ -79,5 +73,3 @@ This library is also implemented in Ruby_ and Go_.
 
 .. _Ruby: https://github.com/attilaolah/intperm.rb
 .. _Go: https://github.com/attilaolah/intperm.go
-
-.. |License| image:: https://pypip.in/license/intperm/badge.png
